@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SuiteName">
+	
+	
+	<test name="Leadtest" allow-return-values="true">
+		<classes>
+			<class name="com.testcases.Leadtest" />
+		</classes>
+	</test>
+	
+	<test name="Logintest" allow-return-values="true">
+		<classes>
+			<class name="com.testcases.Logintest" />
+		</classes>
+	</test>
+	
+	
+	
+	
+	
+</suite>
+
