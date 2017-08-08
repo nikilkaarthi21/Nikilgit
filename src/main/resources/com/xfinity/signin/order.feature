@@ -9,8 +9,11 @@ Scenario Outline: Ordering a dress
 
 Given I open the "URL" on "<browser>"
 And I click on "signin"
-And I Enter the email
-|shanthi.jayaraman7@gmail.com|7@oracle|
+And I Enter the "email"
+|shanthi.jayaraman7@gmail.com|
+And I Enter the "password"
+|7@oracle|
+
 
 And I click on "sign"
 And I click on "dress"
@@ -29,3 +32,4 @@ And I click on "confirm"
 Examples:
 |browser|
 |Chrome|
+|mozilla|

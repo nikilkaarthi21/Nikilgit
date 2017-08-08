@@ -22,15 +22,14 @@ Properties cons;
 public ExtentReports rep=ExtentManager.getInstance();
 public ExtentTest test;
 	
-@And("^I Enter the email$")
-public void I_Enter_the_email(DataTable D)
+@And("^I Enter the \"([^\"]*)\"$")
+public void I_Enter_the(String objectname,DataTable D)
 
 {
-	
 	test=rep.startTest("order");
 	test.log(LogStatus.INFO,"Signintest");
     test.log(LogStatus.PASS,"snapshot below"+test.addScreenCapture("C:/report/pass.png"));
-	Selenium.select(D);
+	Selenium.select(objectname,D);
 }
 
 }

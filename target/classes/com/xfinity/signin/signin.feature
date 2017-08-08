@@ -15,3 +15,4 @@ And I click on "sign"
 Examples:
 |browser|emailid|pwd|
 |Chrome|shanthi.jayaraman7@gmail.com|7@oracle|
+|mozilla|shanthi.jaayraman7@gmail.com|7@oracle|

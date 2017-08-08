@@ -5,7 +5,7 @@
   <groupId>com.xfinity</groupId>
   <artifactId>xfinity</artifactId>
   <version>1.0-SNAPSHOT</version>
-  <packaging>jar</packaging>
+  <packaging>pom</packaging>
 
   <name>xfinity</name>
   <url>http://maven.apache.org</url>
@@ -27,7 +27,15 @@
 
 
 <plugins>
-   
+<plugin>
+     <groupId>org.apache.maven.plugins</groupId>
+   <artifactId>maven-compiler-plugin</artifactId>
+                 <version>3.1</version>
+                 <configuration>
+                     <source>1.8</source>
+                     <target>1.8</target>
+                        </configuration>
+     </plugin>
      <plugin>
       <groupId>org.apache.maven.plugins</groupId>
       <artifactId>maven-site-plugin</artifactId>
@@ -38,22 +46,40 @@
        <artifactId>surefire-report-maven-plugin</artifactId> 
 	     </plugin--> 
 	     
-    
+     <plugin>
+                 <groupId>org.apache.maven.plugins</groupId>
+                 <artifactId>maven-dependency-plugin</artifactId>
+                 <version>2.8</version>
+                 <executions>
+                     <execution>
+                         <phase>integration-test</phase>
+                         <goals>
+                             <goal>build-classpath</goal>
+                         </goals>
+                         </execution>
+					   </executions>
+					   
 
+   </plugin>
+   
    <plugin>
 			 <groupId>org.codehaus.mojo</groupId>
 			   <artifactId>exec-maven-plugin</artifactId>
 					<version>1.6.0</version>
+						  <executions>
+					    <execution>
+					     <phase>integration-test</phase>
 						  <goals>
 						   <goal>java</goal>
 						   </goals>
-						   
-		      <configuration>
+				        </execution>
+					   </executions>
+		 <configuration>
 			  <executableDependency>
 					 <groupId>info.cukes</groupId>
 					<artifactId>cucumber-core</artifactId>
-					<defaultGoal>integration-test</defaultGoal>
 			 </executableDependency>
+       
        
 				<mainClass>cucumber.api.cli.Main</mainClass>
 				<arguments>
@@ -65,7 +91,7 @@
 					<argument>html:target/cucumber-html-report</argument>
 					<argument>--tags</argument>
 					<rgument>--glue</rgument>
-					<argument>@contact</argument>
+					<argument>@order</argument>
 					<argument>src/</argument>
 	                					
 

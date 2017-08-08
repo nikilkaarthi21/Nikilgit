@@ -3,11 +3,11 @@ package com.xfinity.connector;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.util.Date;
+
 import java.util.List;
 import java.util.Properties;
 
-import javax.swing.text.StyleConstants.FontConstants;
+
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
@@ -17,14 +17,14 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxBinary;
+
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxProfile;
+
 
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
-import com.relevantcodes.extentreports.LogStatus;
+
 import com.xfinity.contactus.ExtentManager;
 import com.xfinity.contactus.Xls_Reader;
 
@@ -128,13 +128,12 @@ public class Contactutil {
 
 	}
 	
-	public void select(DataTable D)
+	public void select(String objectname,DataTable D)
 	{
 		List<List<String>>data =D.raw();
-		driver.findElement(By.xpath("//*[@id='email']")).sendKeys(data.get(0).get(0));	
-		driver.findElement(By.xpath("//*[@id='passwd']")).sendKeys(data.get(0).get(1));
+		driver.findElement(By.xpath(cons.getProperty(objectname))).sendKeys(data.get(0).get(0));	
+		//driver.findElement(By.xpath(cons.getProperty(objectname))).sendKeys(data.get(1).get(1));
 
 
 	}
-	
 }
