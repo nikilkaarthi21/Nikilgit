@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="5" tests="5" time="0">
+<testcase classname="Testing contactus on Automation Practice" name="Click on the contactus" time="0">
+<skipped><![CDATA[Given I open "SITE" on "Chrome".............................................undefined
+And I click on "Contactus"..................................................undefined
+And I Enter the data from Excel "subject" and "Webmaster"...................undefined
+And I Enter the data from Excel "objectname1" and "nikil.kaarthi@gmail.com".undefined
+And I Enter the data from Excel "objectname2" and "312312"..................undefined
+And I Enter the data from Excel "objectname3" and "hello"...................undefined
+And I click on "send".......................................................undefined
+]]></skipped>
+</testcase>
+<testcase classname="Testing contactus on Automation Practice" name="Click on the contactus 2" time="0">
+<skipped><![CDATA[Given I open "SITE" on "mozilla"............................................undefined
+And I click on "Contactus"..................................................undefined
+And I Enter the data from Excel "subject" and "Webmaster"...................undefined
+And I Enter the data from Excel "objectname1" and "shanthi.jayaraman7@gmail.com".undefined
+And I Enter the data from Excel "objectname2" and "7873828".................undefined
+And I Enter the data from Excel "objectname3" and "hi"......................undefined
+And I click on "send".......................................................undefined
+]]></skipped>
+</testcase>
+<testcase classname="ordering a dress" name="Ordering a dress" time="0">
+<skipped><![CDATA[Given I open the "URL" on "Chrome"..........................................undefined
+And I click on "signin".....................................................undefined
+And I Enter the "email".....................................................undefined
+And I Enter the "password"..................................................undefined
+And I click on "sign".......................................................undefined
+And I click on "dress"......................................................undefined
+And I click on "summer".....................................................undefined
+And I click on "yellowdress"................................................undefined
+And I click on "addtocart"..................................................undefined
+And I click on "proceed"....................................................undefined
+And I click on "address"....................................................undefined
+And I click on "checkout"...................................................undefined
+And I click on "checkbox"...................................................undefined
+And I click on "shipping"...................................................undefined
+And I click on "check"......................................................undefined
+And I click on "confirm"....................................................undefined
+Then the order should be "success"..........................................undefined
+]]></skipped>
+</testcase>
+<testcase classname="Login test" name="Login test" time="0">
+<skipped><![CDATA[Given I open the "URL" on "Chrome"..........................................undefined
+And I click on "signin".....................................................undefined
+And I Enter the "email" as "shanthi.jayaraman7@gmail.com"...................undefined
+And I Enter the "password" as "7@oracle"....................................undefined
+And I click on "sign".......................................................undefined
+]]></skipped>
+</testcase>
+<testcase classname="Login test" name="Login test 2" time="0">
+<skipped><![CDATA[Given I open the "URL" on "mozilla".........................................undefined
+And I click on "signin".....................................................undefined
+And I Enter the "email" as "shanthi.jaayraman7@gmail.com"...................undefined
+And I Enter the "password" as "7@oracle"....................................undefined
+And I click on "sign".......................................................undefined
+]]></skipped>
+</testcase>
+</testsuite>

@@ -27,9 +27,9 @@ And I click on "checkbox"
 And I click on "shipping"
 And I click on "check"
 And I click on "confirm"
+Then the order should be "success"
 
 
 Examples:
-|browser|
-|Chrome|
-|mozilla|
+|browser|element|
+|Chrome|signin|

@@ -14,6 +14,7 @@ import com.xfinity.contactus.ExtentManager;
 
 import cucumber.api.DataTable;
 import cucumber.api.java.en.And;
+import cucumber.api.java.en.Then;
 
 public class order {
 Contactutil Selenium=Contactutil.getInstance();
@@ -31,5 +32,9 @@ public void I_Enter_the(String objectname,DataTable D)
     test.log(LogStatus.PASS,"snapshot below"+test.addScreenCapture("C:/report/pass.png"));
 	Selenium.select(objectname,D);
 }
-
+@Then("^the order should be \"([^\"]*)\"$")
+public void the_order_should_be(String objectname)
+{
+	Selenium.IsElementPresent(objectname);
+}
 }

@@ -1,5 +1,6 @@
 package com.xfinity.connector;
 
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -135,5 +136,22 @@ public class Contactutil {
 		//driver.findElement(By.xpath(cons.getProperty(objectname))).sendKeys(data.get(1).get(1));
 
 
+	}
+	public boolean IsElementPresent(String objectname)
+	{
+		String actual="Sign out";
+		String Expected=driver.findElement(By.xpath(cons.getProperty(objectname))).getText();
+	 //   String element="signout";
+		if(Expected.equals(actual))
+		{
+		 System.out.println("Element is present");
+		
+		 return true;
+		}
+		else
+		{
+			System.out.println("Element not present");
+		return false;
+		}
 	}
 }
