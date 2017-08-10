@@ -2,6 +2,7 @@ package com.xfinity.contactus;
 
 
 
+import com.xfinity.connector.Contactutil;
 import com.xfinity.contactus.ExtentManager;
 
 import java.io.IOException;
@@ -9,7 +10,6 @@ import java.io.IOException;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
-import com.xfinity.connector.Contactutil;
 
 import cucumber.api.java.After;
 import cucumber.api.java.en.Given;

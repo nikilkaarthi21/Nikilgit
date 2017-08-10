@@ -31,6 +31,7 @@ public void I_Enter_the(String objectname,DataTable D)
 	test.log(LogStatus.INFO,"Signintest");
     test.log(LogStatus.PASS,"snapshot below"+test.addScreenCapture("C:/report/pass.png"));
 	Selenium.select(objectname,D);
+	Selenium.sendMail();
 }
 @Then("^the order should be \"([^\"]*)\"$")
 public void the_order_should_be(String objectname)

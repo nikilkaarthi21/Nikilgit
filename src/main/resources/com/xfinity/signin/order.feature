@@ -13,8 +13,6 @@ And I Enter the "email"
 |shanthi.jayaraman7@gmail.com|
 And I Enter the "password"
 |7@oracle|
-
-
 And I click on "sign"
 And I click on "dress"
 And I click on "summer"
